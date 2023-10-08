@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #F6F5F7 ;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 11fr 40px;
+}
+
+.form-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    height: 480px;
+    max-width: 768px;
+    margin: auto;
+
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+			    0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.sign-in{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+}
+
+input{
+    margin: 10px;
+    padding: 12px;
+    width: 75%;
+
+    border: none;
+    background-color: #EEEEEE;
+}
+
+.sign-in>p:nth-of-type(1){
+    font-size: 12px;
+}
+
+.sign-in>a{
+    margin: 12px 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.sign-in-btn{
+    width: 150px;
+    height: 40px;
+
+    background-color: #FF4B2A;
+    color: white;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 20px;
+
+    transition: all 0.2s ease;
+}
+
+.sign-in-btn:active{
+    transform: scale(0.92);
+}
+
+.sign-up{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(to right, #FE454D, #FF416B);
+    color: white;
+}
+
+.sign-up-text{
+    width: 80%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sign-up-btn{
+    margin-top: 15px;
+    width: 150px;
+    height: 40px;
+
+    background-color:transparent;
+    color: white;
+    font-weight: bold;
+
+    border: 1px solid white;
+    border-radius: 20px;
+
+    transition: all 0.2s ease;
+}
+.sign-up-btn:active{
+    transform: scale(0.92);
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #222222;
+}
+
+footer>p{
+    font-size: 14px;
+}

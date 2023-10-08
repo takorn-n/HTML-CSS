@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+}
+
+/* ---------WELCOME BANNER-------- */
+.welcome{
+    text-align: center;
+    background-color: black;
+}
+
+.welcome>a{
+    display: inline-block;
+    padding: 20px;
+    color: white;
+}
+
+/* -----------------------------HEADER-------------------------------- */
+header{
+    background-image: url("/Airbnb clone/img/Background Image.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 725px;
+    padding: 0 80px;
+}
+/* ---------navbar-------- */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 80px;
+}
+
+.logo{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    color: white;
+    font-size: 18px;
+}
+
+.nav-menu{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-menu>a{
+    font-size: 18px;
+    padding: 10px;
+}
+
+
+.nav-menu>a,
+.right-menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.right-menu{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 22px;
+}
+
+.profile-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 40px;
+    min-width: 75px;
+    background-color: white ;
+
+    border-radius: 29px;
+}
+
+/* ---------selection menu-------- */
+.search-menu{
+    display: flex;
+    align-items: center;
+
+    width: 850px;
+    height: 66px;
+    margin: auto;
+
+    background-color: white;
+    border-radius: 50px;
+}
+
+.search-menu>div {
+    width: 13rem;
+    border-right: 1px solid #dadada;   
+}
+  
+.search-menu>:nth-child(1) {
+    width: 280px;
+    margin-left: 40px;
+}
+  
+.search-menu>:nth-child(4) {
+    width: 190px;
+    border: none;
+}
+
+.search-menu>div:nth-child(2) ,
+.search-menu>div:nth-child(3) ,
+.search-menu>div:nth-child(4) 
+{
+    margin-left: 23px;
+}
+
+.search-menu input{
+    border: none;
+    outline: none;
+}
+
+.search-icon{
+    padding: 15px;
+    margin-right: 8px;
+
+    background-color:#FA215A;
+    border-radius: 50%;
+    border: none;
+}
+
+.search-icon:hover{
+    background-color: #DC0E64;
+    cursor: pointer;
+}
+/* ---------explore-------- */
+.explore{
+    height: 625px;
+
+    margin-top: 225px;
+}
+
+.explore>div>h1{
+    color: white;
+    font-size: 3.5rem;
+}
+
+.exp-btn{
+    height: 30px;
+    width: 155px;
+    margin-top: 15px ;
+
+    font-weight: bold;
+
+    border-radius: 10px;
+    border: none;
+}
+
+
+/* -----------------------------SECTION--------------------------------- */
+
+/* ---------suggest-location------- */
+.suggest-place-section{
+    display: grid;
+    grid: 1fr 1fr / repeat(4,1fr);
+    row-gap: 15px;
+
+    margin: 50px 0;
+    padding: 0 80px;
+}
+
+.suggest-place>img{
+    width: 70px;
+    border-radius: 10px;
+}
+
+.suggest-place{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ---------accomodations------- */
+.accomodations-section{
+    padding: 0 80px;
+    margin: 50px 0;
+}
+
+.accomodations-group{
+    display: flex;
+    gap: 10px;
+}
+
+.accomodations-group img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.accomodations-section>h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.accomodations-group>div>h3{
+    font-size: 17px;
+}
+
+.accomodations-group>div:hover{
+    cursor: pointer;
+}
+
+
+/* ---------activities------- */
+.activities-section{
+    padding: 50px 80px;
+
+    color: #ffffff;
+    background-color: black;
+}
+
+.activities-section>h1{
+    font-size: 30px;
+}
+
+.activities-section>p{
+    font-size: 14px;
+}
+
+.activities-group{
+    display: flex;
+    gap: 13px;
+
+    padding-top: 15px;
+}
+
+.activities-group>a{
+    flex-grow: 1;
+}
+
+.activities-group>a>img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.activities-group>a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.activities-group p{
+    font-size: 14px;
+}
+
+/* ---------host------- */
+.host-section{
+    padding: 50px 80px;
+}
+
+.host-section>h1{
+    font-size: 30px;
+}
+
+.host-group{
+    display: flex;
+    gap: 13px;
+
+    padding-top: 15px;
+}
+
+.host-group>a{
+    flex-grow: 1;
+}
+
+.host-group>a>img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.host-group>a{
+    text-decoration: none;
+    color: #000000
+}
+
+/* -----------------------------FOOTER--------------------------------- */
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr) ;
+    row-gap: 30px;
+
+    padding: 40px 80px 0px 80px;
+    background-color: #F7F7F7;
+
+    border-top: 1px solid #DDDDDD;
+}
+
+.column h5{
+    font-size: 12px;
+}
+
+.column a{
+    display: block;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.column{
+    grid-column: span 3;
+}
+
+.footer-info{
+    grid-column: span 12;
+
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    align-items: center;
+
+    border-top:1px solid #DDDDDD ;
+    padding: 10px 0;
+}
+
+.footer-info-text{
+    grid-column: 1 / span 7;
+}
+
+.footer-info-text a,
+.footer-info-text span{
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+}
+
+/* .footer-info-link a:not(:first-child)::before{
+    content: ' · ';
+    text-decoration: none;
+} */
+
+.footer-info-text a:hover{
+    text-decoration: underline;
+}
+
+.lang-currency{
+    grid-column: 9 / span 3;
+
+    display: flex;
+    align-items: center;
+}
+
+.lang-currency>div>a{
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.lang-currency>div{
+    padding-right: 10px;
+}
+
+.contact{
+    justify-self: end;
+}
+
+.contact>a>img{
+    width: 16px;
+}
+
+.contact>a{
+    text-decoration: none;
+}
